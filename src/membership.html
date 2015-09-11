@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Riverdale Shteeble Membership form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+</head>
+
+<style>
+	@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+	@import url(https://fonts.googleapis.com/css?family=Tinos:700&subset=hebrew,latin);
+	.hebrew {
+		font-family: 'Tinos', serif;
+	}
+	.script {
+		font-family: Times New Roman, Georgia, serif;
+		font-style: italic;
+		font-weight: normal;
+	}
+
+	body {
+		font-size: 12px;
+	}
+	header {
+		margin-bottom: 1em;
+		/*font-size: 1rem;*/
+	}
+	header > .border {
+		padding: .5em 4em;
+	}
+
+	header .blessing {
+		margin: 0;
+		font-size: 1.5em;
+	}
+
+	h1 {
+		font-size: 1.5em;
+		font-family: 'Oswald', sans-serif;
+		font-weight: bold;
+	}
+	h2, .h2 {
+		font-size: 1.15em;
+		text-decoration: underline;
+		font-weight: bold;
+	}
+	
+	h1.inline, h2.inline, h4.inline {
+		margin-top: 0;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+	h4 {
+		font-size: 1.25em;
+		font-weight: normal;
+	}
+
+	footer { font-size: 1.1em }
+	footer img {
+		margin-top: -2em;
+	}
+
+	thead td, tfoot td {
+		text-transform: uppercase;
+	}
+
+	.double-border {
+		border: 4px double;
+	}
+
+	.border {
+		border: 1px solid;
+	}
+
+	input[type="text"] {
+		border-width: 0 0 1px 0;
+		border-color: #000;
+		width: auto;
+	}
+	input[type="text"].small {
+		width: 4em;
+	}
+
+	.notice {
+		margin-top: 1em;
+		page-break-before: always;
+	}
+	.notice p {
+		font-size: 1.85em;
+		font-family: Times New Roman, Georgia, Serif;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	/*.notice > .double-border {
+		margin-bottom: 2em;
+	}
+	.notice .double-border .double-border {
+		position: relative;
+	}
+
+	.notice > .double-border {
+		position: relative;
+	}
+
+	.notice .double-border .blessing {
+		position: absolute;
+		top: .5em;
+		right: 3em;
+	}
+*/
+	/*.notice h1 {
+		font-size: 1.5em;
+	}*/
+
+</style>
+
+<body class="container">
+	
+	<header class="double-border">
+	  <div class="double-border">
+		<h1 class="row blessing">
+			<div class="hebrew text-right col-xs-12">בס׳׳ד</div>
+		</h1>
+		<h1 class="text-center inline">
+			<div class="hebrew">
+				בית המדרש תורה וחסד נאנאש
+			</div>
+			Beis Medrash Torah V'Chesed Nanash <br>
+			629 W.239th Street<br>
+			Riverdale, New York 10463<br>
+			(718) 543-5618 <br>
+			<span class="script">www.RiverdaleShteeble.org</span>
+		</h1>
+	  </div>
+	</header>
+
+	<p>
+		Dear Friend,<br>
+		In order not to bother our congregation during the year, we are asking you to determine (to the best of your ability) your level of participation in our Shtieble. Kindly fill out and submit this form, either with full payment, or with a note detailing your payment plan at the bottom.
+	</p>
+
+	<form>
+
+		<section>
+			<div class="row">
+				<span class="col-xs-2">Name:</span>
+				<input type="text" class="col-xs-5">
+				<span class="col-xs-3 text-right">Phone Number:</span>
+				<input type="text" class="col-xs-2">
+			</div>
+			<div class="row">
+				<span class="col-xs-2">Address:</span>
+				<input type="text" class="col-xs-5">
+				<span class="col-xs-3 text-right">E-Mail</span>
+				<input type="text" class="col-xs-2">
+			</div>
+		</section>
+
+		<section>
+			<h2>Membership Types:</h2>
+			<ul class="list-unstyled">
+				<li class="row">
+					<span class="col-xs-8">
+						- Fellowship (includes 2 seats for the High Holidays & all year round)
+					</span>
+					<span class="col-xs-4">
+						$1,200
+					</span>
+				</li>
+				<li class="row">
+					<span class="col-xs-8">
+						- Individual (includes one seats for the High Holidays & all year round)
+					</span>
+					<span class="col-xs-4">
+						$800
+					</span>
+				</li>
+				<li class="row">
+					<span class="col-xs-8">
+						- Friend
+					</span>
+					<span class="col-xs-4">
+						$400
+					</span>
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Seats (Non Member):</h2>
+			<ul class="list-unstyled">
+				<li>
+					High Holiday only: 
+					<input type="text" class="small">
+						Two seats $400.00 
+					<input type="text" class="small">
+						One seat $200.00
+				</li>
+				<li>
+					For all year round:
+					<input type="text" class="small">
+						Two seats $400.00 
+					<input type="text" class="small">
+						One seat $200.00
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<p>
+				<span class="h2">Kol Nidrei Appeal:</span>
+				<input type="text" class="medium">
+					(Yearly appeal before Kol Nidrei to rais funds for the upkeep of the Shtieble, instead of a dinner)
+			</p>
+		</section>	
+
+		<section>
+			<div class="row">
+				<h2 class="col-xs-5 text-uppercase inline">The Riverdale Torah Project:</h2>
+				<h4 class="col-xs-7 text-right inline">For this year 5776 תשע׳׳ו our goal is to raise $200,000 IY"H</h4>
+			</div>
+			<table class="table-bordered col-xs-10">
+				<thead>
+					<td>Riverdale Torah Project</td>
+					<td>Price</td>
+					<td>Time</td>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Sponsor for a day</td>
+						<td>$180.00</td>
+						<td>Date:</td>
+					</tr>
+					<tr>
+						<td>Sponsor for a week</td>
+						<td>$720.00</td>
+						<td>Week of:</td>
+					</tr>
+					<tr>
+						<td>Supporter for a week</td>
+						<td>$900.00</td>
+						<td>Name of:</td>
+					</tr>
+					<tr>
+						<td>Sponsor for a month</td>
+						<td>$1,200.00</td>
+						<td>Month of:</td>
+					</tr>
+					<tr>
+						<td>Pillar of the Torah</td>
+						<td>$2,600.00</td>
+						<td>Name to appear (yearly):</td>
+					</tr>
+					<tr>
+						<td>Leiluy Nishmas</td>
+						<td>$</td>
+						<td></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>Total</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tfoot>
+			</table>
+
+			<img src="img/scroll.jpg" alt="" class="col-xs-2">
+
+			<div class="row">
+				<h2 class="col-xs-10">Harbatzat Torah, Cholon, Israel</h2>
+			</div>
+				
+			<table class="table-bordered col-xs-10">
+				<tr>
+					<td>Full payment enclosed</td>
+					<td>$</td>
+					<td colspan="2"></td>
+				</tr>
+				<tr class="thead">
+					<td>Total:</td>
+					<td>Per Month</td>
+					<td># of Months</td>
+					<td>Other</td>
+				</tr>
+				<tr>
+					<td>I will pay IY"H</td>
+					<td>$</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</section>
+		<div class="row" style="margin-bottom:1em;"></div>
+		<footer class="row">
+			
+				<p class="col-xs-12">We wish you and your family a happy and healthy Shana Tova. May you be blessed with bracha v' hatzlacha and good health until 120 years. We look forward to sharing many simchas together with you at the Shtieble, IY"H.</p>
+
+				<h4 class="text-center inline">
+					 כתיבה נחתימה טובה ושנה מבורכת מתוך נחת והרחבת הדעת וכל טוב סלה
+				</h4>
+			<img src="img/pen.jpg" class="col-xs-2">
+
+			<div class="col-xs-8">
+
+				<p class="text-center">Congregation Torah V'Chesed NAnash 629 W.239th Street Riverdale, NY 10463 (718-543-5618)</p>
+
+				<h1 class="text-center hebrew"><em>
+					שֶׁתְּחַדֵּשׁ עָלֵינו שָׁנָה תוֹבָה
+				</em></h1>
+				
+			</div>
+			<!-- <div> -->
+				<img src="img/shofar.jpg" class="col-xs-2">
+			<!-- </div> -->
+			
+		</footer>
+
+	</form>
+
+	<article class="notice">
+
+	<header class="double-border">
+	  <div class="double-border">
+		<h1 class="row blessing">
+			<div class="hebrew text-right col-xs-12">בס׳׳ד</div>
+		</h1>
+		<h1 class="text-center inline">
+			<div class="hebrew">
+				בית המדרש תורה וחסד נאנאש
+			</div>
+			Beis Medrash Torah V'Chesed Nanash <br>
+			629 W.239th Street<br>
+			Riverdale, New York 10463<br>
+			(718) 543-5618 <br>
+			<span class="script">www.RiverdaleShteeble.org</span>
+		</h1>
+	  </div>
+	</header>
+
+
+		<p><u><b>Notice Regarding Membership</b></u></p>
+		<p>Only those who complete membership forms will be included on the shul's membership list</p>
+		<p>the shtiebel does not have annual dinners, a journal, or appeals during the year to raise money, and we don't send out bills for dues. We rely only on your membership contributions to pay the cost of running the shul</p>
+		<p>last year, one-third of those membership list still have not paid their dues</p>
+		<p>when you deliver a check to the shul, please specify if it is for membership dues, the kol nidre appeal, an aliya, kiddish, shalosh seudos or other purpose</p>
+		<p>to maintain the dignity of our shabbos services, please sponsor at least one kiddish and shalosh seudos each year &dash; you don't need a special occasion</p>
+		<p>all regular members who complete a membership form but cannot afford to pay membership dues will still be included in the membership list <br>non-regular members who do not pay dues will not be included</p>
+		<p><b><em>everyone is welcome to daven in the shtiebel whether or not they can afford to pay membership dues</em></b></p>
+		
+	</article>
+
+</body>
+</html>
